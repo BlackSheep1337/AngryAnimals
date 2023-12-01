@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cvwsh02845bf8"]
+
+[ext_resource type="Texture2D" uid="uid://cay7e3pueaixd" path="res://icon.svg" id="1_kavs5"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ia7px"]
+bounce = 0.4
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6deyu"]
+radius = 13.0
+
+[node name="Animal" type="RigidBody2D"]
+physics_material_override = SubResource("PhysicsMaterial_ia7px")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_kavs5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_6deyu")
