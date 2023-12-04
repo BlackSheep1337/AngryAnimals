@@ -14,6 +14,10 @@ config/name="AngryAnimals"
 run/main_scene="res://level/level.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 
+[autoload]
+
+SignalManager="*res://singletons/signal_manager.gd"
+
 [display]
 
 window/size/viewport_width=1024
